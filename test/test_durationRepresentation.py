@@ -83,7 +83,8 @@ def test_durationRepresentation():
 
 
 def test_durationRepresentation_hierarchical():
-
+    import numpy as np
+    np.random.seed(2025)
     raw = pd.read_csv(
         os.path.join(os.path.dirname(__file__), "..", "examples", "testdata.csv"),
         index_col=0,
